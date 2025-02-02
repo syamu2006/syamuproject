@@ -1,0 +1,137 @@
+  /* Reuse previous styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 120px;
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #94A3B8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0EFF8B;
+}
+
+.signin-btn {
+    background-color: #0EFF8B;
+    color: #0F172A;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Community Page Specific Styles */
+.community-hero {
+    padding: 160px 120px 60px;
+    background: linear-gradient(180deg, #0F172A 0%, rgba(15, 23, 42, 0.6) 100%);
+    text-align: center;
+}
+
+.community-hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.community-hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.discussion-section, .events-section, .contributions-section {
+    padding: 40px 120px;
+}
+
+.discussion-title, .events-title, .contributions-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.discussion-list, .events-list, .contributions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.discussion-card, .event-card, .contribution-card {
+    background-color: #1E293B;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.discussion-card:hover, .event-card:hover, .contribution-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.discussion-card h3, .event-card h3, .contribution-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.discussion-card p, .event-card p, .contribution-card p {
+    color: #94A3B8;
+}
+
+.join-button {
+    background-color: #0EFF8B;
+    color: #0F172A;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline -block;
+    margin-top: 10px;
+}
+
+.join-button:hover {
+    background-color: #0DDA7A;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 16px;
+    }
+
+    .community-hero {
+        padding: 80px 20px 40px;
+    }
+
+    .community-hero h1 {
+        font-size: 32px;
+    }
+
+    .discussion-section, .events-section, .contributions-section {
+        padding: 20px;
+    }
+}

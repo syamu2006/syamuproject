@@ -1,0 +1,204 @@
+ /* Reuse previous styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #0F172A;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 120px;
+    background-color: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: #94A3B8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #0EFF8B;
+}
+
+.signin-btn {
+    background-color: #0EFF8B;
+    color: #0F172A;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Support Page Specific Styles */
+.support-hero {
+    padding: 160px 120px 60px;
+    background: linear-gradient(180deg, #0F172A 0%, rgba(15, 23, 42, 0.6) 100%);
+    text-align: center;
+}
+
+.support-hero h1 {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1E293B;
+    color: white;
+    padding-right: 120px;
+}
+
+.search-button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background-color: #0EFF 8B;
+    color: #0F172A;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #0DDA7A;
+}
+
+.faq-section, .contact-section, .support-options {
+    padding: 40px 120px;
+}
+
+.faq-title, .contact-title, .support-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.faq-card {
+    background-color: #1E293B;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.faq-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.faq-card p {
+    color: #94A3B8;
+}
+
+.contact-form {
+    background-color: #1E293B;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2A2E35;
+    color: white;
+}
+
+.contact-form button {
+    background-color: #0EFF8B;
+    color: #0F172A;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0DDA7A;
+}
+
+.support-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.support-option-card {
+    background-color: #1E293B;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.support-option-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.support-option-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 16px;
+    }
+
+    .support-hero {
+        padding: 80px 20px 40px;
+    }
+
+    .support-hero h1 {
+        font-size: 32px;
+    }
+
+    .faq-section, .contact-section, .support-options {
+        padding: 20px;
+    }
+}
